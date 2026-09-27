@@ -1,0 +1,7 @@
+baseURL = "/"
+languageCode = "en-gb"
+title = "Harbour Hide Co."
+
+[params]
+  email = "hello@harbourhide.example"
+  tagline = "Handmade handbags, made to order in Fife, Scotland"
