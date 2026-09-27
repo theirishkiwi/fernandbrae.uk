@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="catalog" style="padding-top:2.5rem;">
+  <div class="item">
+    <div class="item-art">{{ partial "bag-art.html" .Params.shape }}</div>
+    <div class="item-text">
+      <h3>{{ .Title }}</h3>
+      <p class="desc">{{ .Params.description }}</p>
+      <p class="materials">{{ .Params.materials }}</p>
+      <p class="price">{{ .Params.price }}</p>
+      <p style="margin-top:1rem;"><a href="{{ "/" | relURL }}">&larr; Back to all bags</a></p>
+    </div>
+  </div>
+</div>
+{{ end }}

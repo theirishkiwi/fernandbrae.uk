@@ -1,0 +1,28 @@
+{{ define "main" }}
+<section class="hero">
+  <div>
+    <h1>{{ .Params.hero_title }}</h1>
+    <p class="lede">{{ .Params.hero_lede }}</p>
+  </div>
+  <div class="hero-art">{{ partial "bag-art.html" "hero" }}</div>
+</section>
+
+<div class="section-heading">
+  <h2>{{ .Params.run_heading }}</h2>
+  <p>{{ .Params.run_note }}</p>
+</div>
+
+<div class="catalog">
+  {{ range (where .Site.RegularPages "Type" "bags").ByWeight }}
+  <div class="item">
+    <div class="item-art">{{ partial "bag-art.html" .Params.shape }}</div>
+    <div class="item-text">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p class="desc">{{ .Params.description }}</p>
+      <p class="materials">{{ .Params.materials }}</p>
+      <p class="price">{{ .Params.price }}</p>
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

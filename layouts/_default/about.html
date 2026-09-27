@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="about-wrap">
+  <div class="portrait">{{ partial "bag-art.html" "portrait" }}</div>
+  <div class="about-copy">
+    <h1>{{ .Title }} the maker</h1>
+    {{ range .Params.story }}<p>{{ . }}</p>{{ end }}
+  </div>
+</div>
+
+<div class="process">
+  <h2>How each bag comes together</h2>
+  <ol>
+    {{ range .Params.steps }}<li>{{ . }}</li>{{ end }}
+  </ol>
+</div>
+{{ end }}
