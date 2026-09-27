@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-gb"
-title = "Harbour Hide Co."
+title = "Fern and Brae"
 
 [params]
-  email = "hello@harbourhide.example"
+  email = "info@fernandbrae.uk"
   tagline = "Handmade handbags, made to order in Fife, Scotland"
