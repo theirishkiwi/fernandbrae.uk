@@ -1,4 +1,4 @@
-# Harbour Hide Co. — Hugo site
+# Fern and Brae — Hugo site
 
 A flat-file site: every page is a small text file with a few fields at the
 top. Edit a file, save, `git push` — Cloudflare Pages rebuilds and
